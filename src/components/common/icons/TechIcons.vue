@@ -105,7 +105,7 @@ const floatingIcons = [];
 const iconTypes = Object.keys(iconComponents);
 
 for (let i = 0; i < 15; i++) {
-    const iconType = iconTypes[i];
+    const iconType = iconTypes[Math.floor(Math.random() * iconTypes.length)];
     const icon = iconComponents[iconType];
 
     floatingIcons.push({
@@ -121,4 +121,30 @@ for (let i = 0; i < 15; i++) {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.floating-icon {
+    animation: float 20s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: translate(20px, 15px) rotate(5deg) scale(1.05);
+    }
+
+    50% {
+        transform: translate(-15px, 25px) rotate(-5deg) scale(0.95);
+    }
+
+    75% {
+        transform: translate(15px, -20px) rotate(10deg) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-20px, -15px) rotate(-10deg) scale(0.9);
+    }
+}
+</style>
