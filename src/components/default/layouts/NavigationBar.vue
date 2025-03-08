@@ -2,7 +2,9 @@
   <div
     class="fixed w-full bg-gradient-to-b from-white/50 to-white/20 backdrop-blur-md shadow-sm z-50 px-4 py-4 md:px-8"
   >
-    <div class="max-w-6xl mx-auto flex justify-center items-center">
+    <div
+      class="max-w-6xl mx-auto flex items-center justify-end md:justify-center"
+    >
       <div class="hidden md:flex space-x-8">
         <a
           v-for="item in navItems"
@@ -47,6 +49,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { Menu as MenuIcon, X as XIcon } from 'lucide-vue-next';
 
 // State for mobile menu
 const mobileMenuOpen = ref(false);
