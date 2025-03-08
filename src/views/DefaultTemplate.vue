@@ -20,18 +20,16 @@ const generateFloatingIcons = (iconCounts) => {
   const iconKeys = Object.keys(simpleIcons);
   const newIcons = Array.from({ length: iconCounts }, () => {
     const randomIconKey = generateRandomValue(iconKeys);
-    floatingIcons.value.push(
-      markRaw({
-        component: markRaw(simpleIcons[randomIconKey]),
-        color: generateRandomValue(colors),
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        duration: 15 + Math.random() * 30,
-        delay: Math.random() * 5,
-        opacity: 0.1 + Math.random() * 0.3,
-        scale: 0.5 + Math.random() * 1.5,
-      })
-    );
+    return markRaw({
+      component: markRaw(simpleIcons[randomIconKey]),
+      color: generateRandomValue(colors),
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      duration: 15 + Math.random() * 30,
+      delay: Math.random() * 5,
+      opacity: 0.1 + Math.random() * 0.3,
+      scale: 0.5 + Math.random() * 1.5,
+    });
   });
   floatingIcons.value = newIcons;
 };
