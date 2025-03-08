@@ -21,8 +21,8 @@ const floatingIcons = shallowRef([]);
 // Generate Icons in form of objects with colors
 const generateFloatingIcons = (iconCounts) => {
   const iconKeys = Object.keys(simpleIcons);
-  const newIcons = Array.from({ length: iconCounts }, () => {
-    const randomIconKey = generateRandomValue(iconKeys);
+  const newIcons = Array.from({ length: iconCounts }, (_, index) => {
+    const randomIconKey = iconKeys[index];
     return markRaw({
       component: markRaw(simpleIcons[randomIconKey]),
       color: generateRandomValue(colors),
