@@ -3,11 +3,14 @@
     <MouseBackdrop />
     <NavigationBar />
     <TechIcons :floating-icons="floatingIcons" />
+
+    <HeroSection :social-links="socialLinks" />
   </div>
 </template>
 <script setup>
 import NavigationBar from '@/components/default/layouts/NavigationBar.vue';
 import TechIcons from '@/components/common/icons/TechIcons.vue';
+import HeroSection from '@/components/default/sections/HeroSection.vue';
 
 import { markRaw, onMounted, shallowRef } from 'vue';
 import simpleIcons from '@/plugins/simple-icons';
@@ -18,8 +21,8 @@ const floatingIcons = shallowRef([]);
 // Generate Icons in form of objects with colors
 const generateFloatingIcons = (iconCounts) => {
   const iconKeys = Object.keys(simpleIcons);
-  const newIcons = Array.from({ length: iconCounts }, () => {
-    const randomIconKey = generateRandomValue(iconKeys);
+  const newIcons = Array.from({ length: iconCounts }, (_, index) => {
+    const randomIconKey = iconKeys[index];
     return markRaw({
       component: markRaw(simpleIcons[randomIconKey]),
       color: generateRandomValue(colors),
@@ -33,6 +36,34 @@ const generateFloatingIcons = (iconCounts) => {
   });
   floatingIcons.value = newIcons;
 };
+
+// Social Links
+const socialLinks = [
+  {
+    name: 'GitHub',
+    icon: simpleIcons.GitIcon,
+    url: 'https://github.com',
+    color: '#181717',
+  },
+  {
+    name: 'LinkedIn',
+    icon: simpleIcons.LinkedInIcon,
+    url: 'https://linkedin.com',
+    color: '#0077B5',
+  },
+  {
+    name: 'Twitter',
+    icon: simpleIcons.XIcon,
+    url: 'https://twitter.com',
+    color: '#000000',
+  },
+  {
+    name: 'Instagram',
+    icon: simpleIcons.InstagramIcon,
+    url: 'https://instagram.com',
+    color: '#E4405F',
+  },
+];
 
 onMounted(() => {
   generateFloatingIcons(15);
