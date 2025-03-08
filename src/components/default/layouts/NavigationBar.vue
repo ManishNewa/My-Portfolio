@@ -47,6 +47,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { Menu as MenuIcon, X as XIcon } from 'lucide-vue-next';
 
 // State for mobile menu
 const mobileMenuOpen = ref(false);
