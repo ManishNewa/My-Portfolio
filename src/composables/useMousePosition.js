@@ -68,6 +68,7 @@ export function useMousePosition() {
   onUnmounted(() => {
     window.removeEventListener('mousemove', handleMouseMove);
     perspectiveElements.value.clear();
+    cards.value = [];
   });
 
   return {
