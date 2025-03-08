@@ -27,3 +27,13 @@
     animation-delay: 0.9s;
   }
   
+  /* Perspective card effect */
+    
+  .perspective-card-container {
+    perspective: 1000px;
+  }
+
+  .perspective-card {
+    transition: transform 0.3s ease-out;
+    transform-style: preserve-3d;
+  }
