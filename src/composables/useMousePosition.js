@@ -6,7 +6,9 @@ export function useMousePosition() {
 
   const handleMouseMove = (event) => {
     mousePos.value = { x: event.clientX, y: event.clientY };
-    applyPerspectiveEffect(event);
+    if (perspectiveElements.value.size > 0) {
+      applyPerspectiveEffect(event);
+    }
   };
 
   // For animating the elements on perspective based on mouse hover
