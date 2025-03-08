@@ -46,10 +46,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 // State for mobile menu
-const mobileMenuOpen = ref(false)
+const mobileMenuOpen = ref(false);
 
 // Navigation items
 const navItems = [
@@ -58,7 +58,7 @@ const navItems = [
   { id: 3, label: 'Skills', href: '#skills' },
   { id: 4, label: 'Projects', href: '#projects' },
   { id: 5, label: 'Contact', href: '#contact' },
-]
+];
 </script>
 
 <style scoped>

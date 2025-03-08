@@ -19,7 +19,7 @@ import {
   XIcon,
   LinkedInIcon,
   WhatsAppIcon,
-} from 'vue3-simple-icons'
+} from 'vue3-simple-icons';
 
 export default {
   Html5Icon,
@@ -42,4 +42,4 @@ export default {
   XIcon,
   LinkedInIcon,
   WhatsAppIcon,
-}
+};

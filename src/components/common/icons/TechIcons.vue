@@ -1,7 +1,7 @@
 <template>
   <div class="fixed inset-0 pointer-events-none z-10 overflow-hidden">
     <div
-      v-for="(icon, index) in props.floatingIcons"
+      v-for="(icon, index) in floatingIcons"
       :key="index"
       class="absolute floating-icon"
       :style="getIconStyle(icon)"
@@ -16,12 +16,12 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   floatingIcons: {
     type: Array,
     required: true,
   },
-})
+});
 
 const getIconStyle = (icon) => ({
   left: `${icon.x}%`,
@@ -31,7 +31,7 @@ const getIconStyle = (icon) => ({
   opacity: icon.opacity,
   transform: `scale(${icon.scale})`,
   filter: 'blur(0.5px)',
-})
+});
 </script>
 
 <style scoped>

@@ -1,6 +1,6 @@
-import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
-import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import js from '@eslint/js';
+import pluginVue from 'eslint-plugin-vue';
+import skipFormatting from '@vue/eslint-config-prettier/skip-formatting';
 import prettierConfig from 'eslint-config-prettier';
 import pluginPrettier from 'eslint-plugin-prettier';
 
@@ -29,7 +29,7 @@ export default [
         'error',
         {
           singleQuote: true, // Use single quotes
-          semi: false, // No semicolons
+          semi: true, // No semicolons
           trailingComma: 'es5', // Add trailing commas where valid in ES5
           printWidth: 80, // Wrap code at 80 characters
           tabWidth: 2, // Use 2 spaces for indentation
@@ -39,4 +39,4 @@ export default [
       ],
     },
   },
-]
+];

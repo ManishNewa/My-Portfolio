@@ -9,10 +9,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue';
 
 // Props for customization
-const props = defineProps({
+defineProps({
   gradientColorStart: {
     type: String,
     default: 'rgba(125, 125, 255, 0.4)',
@@ -26,22 +26,22 @@ const props = defineProps({
     default: 0.7,
     validator: (value) => value >= 0 && value <= 1,
   },
-})
+});
 
 // Mouse position tracking
-const mousePos = ref({ x: 0, y: 0 })
+const mousePos = ref({ x: 0, y: 0 });
 
 const handleMouseMove = (e) => {
-  mousePos.value = { x: e.clientX, y: e.clientY }
-}
+  mousePos.value = { x: e.clientX, y: e.clientY };
+};
 
 onMounted(() => {
-  window.addEventListener('mousemove', handleMouseMove)
-})
+  window.addEventListener('mousemove', handleMouseMove);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('mousemove', handleMouseMove)
-})
+  window.removeEventListener('mousemove', handleMouseMove);
+});
 </script>
 
 <style scoped></style>

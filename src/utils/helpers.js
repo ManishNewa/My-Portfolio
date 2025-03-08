@@ -19,8 +19,8 @@ export const colors = [
   '#88b04b', // Moss green
   '#ffa500', // Orange
   '#92a8d1', // Soft blue
-]
+];
 
 export const generateRandomValue = (arrayData) => {
-  return arrayData[Math.floor(Math.random() * arrayData.length)]
-}
+  return arrayData[Math.floor(Math.random() * arrayData.length)];
+};
