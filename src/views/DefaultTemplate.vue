@@ -75,42 +75,51 @@ const socialLinks = [
 const workExperiences = [
   {
     id: 1,
-    position: 'Senior Frontend Developer',
-    company: 'TechCorp Inc.',
-    period: '2021 - Present',
+    position: 'React Native Developer',
+    company: 'Hylark, London',
+    period: 'Jan 2025 - Present',
     description:
-      "Led the development of the company's flagship SaaS product, improving performance by 40%. Mentored junior developers and implemented modern CI/CD practices.",
-    skills: ['Vue.js', 'TypeScript', 'GraphQL', 'Jest'],
+      'Developed highly responsive mobile application. Collaborated with designers and backend developers to deliver high-quality application on time.',
+    skills: ['React Native', 'JavaScript', 'SCSS', 'Apollo GraphQL', 'Expo'],
     logo: '/images/logos/hylark_logo.png',
   },
   {
     id: 2,
-    position: 'Frontend Developer',
-    company: 'WebSolutions Ltd.',
-    period: '2018 - 2021',
+    position: 'Software Intern (Advanced Practice)',
+    company: 'Ignis Technologies, Chester',
+    period: 'Oct 2023 - Dec 2023',
     description:
-      'Developed responsive web applications for various clients. Collaborated with designers and backend developers to deliver high-quality products on time.',
-    skills: ['React', 'JavaScript', 'SCSS', 'RESTful APIs'],
-    logo: '/images/logos/cedargate_logo.png',
-  },
-  {
-    id: 3,
-    position: 'UI/UX Designer & Developer',
-    company: 'CreativeMinds Agency',
-    period: '2016 - 2018',
-    description:
-      'Created wireframes, prototypes, and implemented frontend designs. Worked directly with clients to gather requirements and iterate on designs.',
-    skills: ['HTML/CSS', 'JavaScript', 'Figma', 'Adobe XD'],
+      'As a part of my advanced practice for my masters degree i joined Ignis Technologies. During my tenure I had supported integration of two software applications from core PHP to Vue.js, significantly enhancing front-end performance and user experience.',
+    skills: [
+      'Vue.js',
+      'JavaScript',
+      'MySQL',
+      'Laravel',
+      'Git',
+      'Rest API',
+      'AWS',
+    ],
     logo: '/images/logos/ignis_logo.png',
   },
   {
-    id: 4,
-    position: 'Junior Web Developer',
-    company: 'StartUp Innovations',
-    period: '2015 - 2016',
+    id: 3,
+    position: 'Software Engineer',
+    company: 'Cedargate Technologies, Kathmandu',
+    period: 'Sept 2020 - Aug 2022',
     description:
-      'Assisted in the development of web applications. Learned modern web development practices and collaborated in an agile team environment.',
-    skills: ['HTML/CSS', 'jQuery', 'Bootstrap', 'PHP'],
+      'Migrated the critical UI components of our operational management software from Angular JS to React JS fixing UI crash issues along with an increased speed on components loading by 75%.' +
+      ' Led Operational Management department by mentoring newcomers and juniors by supporting them with guidelines where necessary and involved in code reviews.',
+    skills: ['HTML/CSS', 'JavaScript', 'React', 'MySQL', 'Java', 'AWS'],
+    logo: '/images/logos/cedargate_logo.png',
+  },
+  {
+    id: 4,
+    position: 'React Native Developer',
+    company: 'Codelio Solutions',
+    period: 'Aug 2019 - Sep 2020',
+    description:
+      'Collaborated with product management to design, build and test systems covering the overall SDLC phases for the software system from scratch and successfully delivered 5 mobile app projects based on React Native during my tenure.',
+    skills: ['React Native', 'HTML/CSS', 'JavaScript', 'PHP', 'Laravel'],
     logo: '/images/logos/codelio_logo.png',
   },
 ];
