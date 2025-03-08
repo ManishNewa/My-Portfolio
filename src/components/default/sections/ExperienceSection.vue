@@ -55,7 +55,7 @@
                       </p>
                     </div>
                     <span
-                      class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm"
+                      class="px-3 py-1 mx-3 bg-purple-100 text-purple-800 rounded-full text-sm"
                       >{{ job.period }}</span
                     >
                   </div>
@@ -72,12 +72,12 @@
 
                   <!-- Company logo -->
                   <div
-                    class="absolute -top-4 -right-4 w-15 h-15 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden"
+                    class="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden"
                   >
                     <img
                       :src="job.logo"
                       :alt="job.company"
-                      class="w-12 object-contain"
+                      class="w-10 object-contain"
                     />
                   </div>
                 </div>
