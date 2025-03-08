@@ -1,14 +1,7 @@
 <template>
     <div class="fixed inset-0 pointer-events-none z-10 overflow-hidden">
-        <div v-for="(icon, index) in props.floatingIcons" :key="index" class="absolute floating-icon" :style="{
-            left: `${icon.x}%`,
-            top: `${icon.y}%`,
-            animationDuration: `${icon.duration}s`,
-            animationDelay: `${icon.delay}s`,
-            opacity: icon.opacity,
-            transform: `scale(${icon.scale})`,
-            filter: 'blur(0.5px)'
-        }">
+        <div v-for="(icon, index) in props.floatingIcons" :key="index" class="absolute floating-icon"
+            :style="getIconStyle(icon)">
             <component :is="icon.component" class="h-10 w-10 md:h-16 md:w-16" :style="{ color: icon.color }" />
         </div>
     </div>
@@ -22,11 +15,22 @@ const props = defineProps({
         required: true
     }
 })
+
+const getIconStyle = (icon) => ({
+    left: `${icon.x}%`,
+    top: `${icon.y}%`,
+    animationDuration: `${icon.duration}s`,
+    animationDelay: `${icon.delay}s`,
+    opacity: icon.opacity,
+    transform: `scale(${icon.scale})`,
+    filter: 'blur(0.5px)',
+});
+
 </script>
 
 <style scoped>
 .floating-icon {
-    animation: float 20s ease-in-out infinite alternate;
+    animation: float 1s ease-in-out infinite alternate;
 }
 
 @keyframes float {
