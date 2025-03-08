@@ -5,12 +5,15 @@
     <TechIcons :floating-icons="floatingIcons" />
 
     <HeroSection :social-links="socialLinks" />
+
+    <AboutSection />
   </div>
 </template>
 <script setup>
 import NavigationBar from '@/components/default/layouts/NavigationBar.vue';
 import TechIcons from '@/components/common/icons/TechIcons.vue';
 import HeroSection from '@/components/default/sections/HeroSection.vue';
+import AboutSection from '@/components/default/sections/AboutSection.vue';
 
 import { markRaw, onMounted, shallowRef } from 'vue';
 import simpleIcons from '@/plugins/simple-icons';
