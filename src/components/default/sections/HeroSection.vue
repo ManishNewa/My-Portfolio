@@ -68,12 +68,24 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue';
 import { Download as DownloadIcon, Mail as MailIcon } from 'lucide-vue-next';
+
+import { useMousePosition } from '@/composables/useMousePosition';
+
+const { registerElement } = useMousePosition();
+
+const perspectiveCard = ref(null);
+
 defineProps({
   socialLinks: {
     type: Array,
     required: true,
   },
+});
+
+onMounted(() => {
+  registerElement(perspectiveCard, 20);
 });
 </script>
 
