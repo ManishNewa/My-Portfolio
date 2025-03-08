@@ -77,4 +77,32 @@ defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.typing-text {
+  border-right: 3px solid;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+</style>
