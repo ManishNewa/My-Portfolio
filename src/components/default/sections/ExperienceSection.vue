@@ -40,7 +40,7 @@
                 class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover-lift perspective-card-container"
                 :ref="
                   (el) => {
-                    if (el) experienceCards[index] = el;
+                    if (el) cards[index] = el;
                   }
                 "
               >
@@ -91,39 +91,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-// import { useMousePosition } from '@/composables/useMousePosition';
+import { useMousePosition } from '@/composables/useMousePosition';
 
-// const { registerElement } = useMousePosition();
+const { cards } = useMousePosition();
 
 defineProps({
   experiences: {
     type: Array,
     required: true,
   },
-});
-
-const experienceCards = ref([]);
-
-experienceCards.value.forEach((card) => {
-  if (card) {
-    const rect = card.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      const perspectiveCard = card.querySelector('.perspective-card');
-      if (perspectiveCard) {
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        const deltaX = (e.clientX - centerX) / 40;
-        const deltaY = (e.clientY - centerY) / 40;
-
-        perspectiveCard.style.transform = `rotateY(${deltaX}deg) rotateX(${-deltaY}deg)`;
-      }
-    }
-  }
-});
-
-onMounted(() => {
-  //   registerElement(aboutImage.value, 20);
 });
 </script>
 
