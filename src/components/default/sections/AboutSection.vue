@@ -35,7 +35,7 @@
           >
             <div class="perspective-card" ref="aboutImage">
               <img
-                :src="'/images/liki3.jpg'"
+                :src="'/images/personal/liki3.jpg'"
                 alt="About me"
                 class="w-full h-auto"
               />
