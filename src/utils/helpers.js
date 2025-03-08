@@ -21,3 +21,6 @@ export const colors = [
     '#92a8d1', // Soft blue 
 ];
 
+export const generateRandomValue = (arrayData) => {
+    return arrayData[Math.floor(Math.random() * arrayData.length)]
+}
