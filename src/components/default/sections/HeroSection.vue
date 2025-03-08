@@ -10,7 +10,7 @@
             class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto"
           >
             <img
-              :src="'public/images/Likita1.png'"
+              :src="'/images/Likita1.png'"
               alt="Profile"
               class="w-full h-full object-cover"
             />
@@ -99,10 +99,12 @@ onMounted(() => {
     typing 3.5s steps(30, end),
     blink-caret 0.75s step-end infinite;
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -113,6 +115,7 @@ onMounted(() => {
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: black;
   }
