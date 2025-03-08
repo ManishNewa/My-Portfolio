@@ -9,7 +9,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { useMousePosition } from '@/composables/useMousePosition';
+
+const { mousePos } = useMousePosition();
 
 // Props for customization
 defineProps({
@@ -26,21 +28,6 @@ defineProps({
     default: 0.7,
     validator: (value) => value >= 0 && value <= 1,
   },
-});
-
-// Mouse position tracking
-const mousePos = ref({ x: 0, y: 0 });
-
-const handleMouseMove = (e) => {
-  mousePos.value = { x: e.clientX, y: e.clientY };
-};
-
-onMounted(() => {
-  window.addEventListener('mousemove', handleMouseMove);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('mousemove', handleMouseMove);
 });
 </script>
 
