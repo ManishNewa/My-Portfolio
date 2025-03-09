@@ -105,15 +105,33 @@ const workExperiences = [
   },
 ];
 
-// Projects
+// Projects with images and additional details
 const projects = [
   {
     id: 1,
     title: 'E-commerce Website',
     description:
       'A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.',
+    longDescription:
+      'This comprehensive e-commerce solution provides businesses with a complete online shopping experience. Built with Vue.js and Node.js, it features a responsive design that works seamlessly across all devices.',
     image: 'https://via.placeholder.com/600x400',
+    images: [
+      'https://via.placeholder.com/1200x800?text=E-commerce+Homepage',
+      'https://via.placeholder.com/1200x800?text=Product+Listing',
+      'https://via.placeholder.com/1200x800?text=Shopping+Cart',
+      'https://via.placeholder.com/1200x800?text=Checkout+Process',
+    ],
     technologies: ['Vue.js', 'Vuex', 'Node.js', 'MongoDB'],
+    features: [
+      'Responsive product catalog with filtering and sorting',
+      'User authentication and profile management',
+      'Shopping cart with persistent storage',
+      'Secure checkout process with Stripe integration',
+      'Order history and tracking',
+      'Admin dashboard for inventory management',
+    ],
+    challenges:
+      'One of the main challenges was implementing a real-time inventory system that could handle concurrent purchases. I solved this by implementing a reservation system during checkout and using WebSockets to notify users of low stock items.',
     demoUrl: '#',
     codeUrl: '#',
   },
@@ -122,8 +140,26 @@ const projects = [
     title: 'Task Management App',
     description:
       'A drag-and-drop task management application with real-time updates and team collaboration features.',
+    longDescription:
+      'This task management application helps teams organize their work efficiently. It features a drag-and-drop interface for easy task prioritization and real-time updates to keep everyone in sync.',
     image: 'https://via.placeholder.com/600x400',
+    images: [
+      'https://via.placeholder.com/1200x800?text=Task+Board',
+      'https://via.placeholder.com/1200x800?text=Task+Details',
+      'https://via.placeholder.com/1200x800?text=Team+Dashboard',
+      'https://via.placeholder.com/1200x800?text=Mobile+View',
+    ],
     technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
+    features: [
+      'Intuitive drag-and-drop interface',
+      'Real-time updates across all connected devices',
+      'Team collaboration with comments and assignments',
+      'Customizable boards and task categories',
+      'Due date tracking with notifications',
+      'Time tracking and reporting',
+    ],
+    challenges:
+      'Implementing real-time synchronization across multiple devices while maintaining performance was challenging. I used Firebase Realtime Database with careful data structuring to ensure efficient updates and minimize bandwidth usage.',
     demoUrl: '#',
     codeUrl: '#',
   },
@@ -132,8 +168,26 @@ const projects = [
     title: 'Weather Dashboard',
     description:
       'A weather application that displays current and forecasted weather data with beautiful visualizations.',
+    longDescription:
+      'This weather dashboard provides users with accurate weather information in a visually appealing format. It uses modern APIs to fetch real-time data and presents it through interactive charts and graphics.',
     image: 'https://via.placeholder.com/600x400',
+    images: [
+      'https://via.placeholder.com/1200x800?text=Weather+Dashboard',
+      'https://via.placeholder.com/1200x800?text=Forecast+View',
+      'https://via.placeholder.com/1200x800?text=Weather+Map',
+      'https://via.placeholder.com/1200x800?text=Location+Search',
+    ],
     technologies: ['Vue.js', 'Chart.js', 'Weather API'],
+    features: [
+      'Current weather conditions with detailed metrics',
+      '7-day forecast with hourly breakdowns',
+      'Interactive weather maps with radar overlays',
+      'Location search with autocomplete',
+      'Saved locations for quick access',
+      'Weather alerts and notifications',
+    ],
+    challenges:
+      'Creating accurate and visually appealing data visualizations was a significant challenge. I used Chart.js with custom configurations to display complex weather data in an intuitive way that helps users understand patterns at a glance.',
     demoUrl: '#',
     codeUrl: '#',
   },
@@ -142,8 +196,26 @@ const projects = [
     title: 'Recipe Finder',
     description:
       'An application that allows users to search for recipes based on ingredients they have at home.',
+    longDescription:
+      'This recipe finder helps users discover new meals based on ingredients they already have. It features a smart search algorithm that suggests recipes with maximum ingredient matches and minimum missing items.',
     image: 'https://via.placeholder.com/600x400',
+    images: [
+      'https://via.placeholder.com/1200x800?text=Recipe+Search',
+      'https://via.placeholder.com/1200x800?text=Recipe+Details',
+      'https://via.placeholder.com/1200x800?text=Ingredient+Selection',
+      'https://via.placeholder.com/1200x800?text=Saved+Recipes',
+    ],
     technologies: ['Vue.js', 'Vuetify', 'Recipe API'],
+    features: [
+      'Ingredient-based recipe search',
+      'Dietary preference and allergy filters',
+      'Step-by-step cooking instructions',
+      'Nutritional information and serving sizes',
+      'Recipe saving and meal planning',
+      'Shopping list generation for missing ingredients',
+    ],
+    challenges:
+      'Developing an algorithm that could effectively match available ingredients to recipes while accounting for substitutions was complex. I implemented a scoring system that ranks recipes based on ingredient matches, popularity, and preparation time.',
     demoUrl: '#',
     codeUrl: '#',
   },
@@ -152,8 +224,26 @@ const projects = [
     title: 'Fitness Tracker',
     description:
       'A fitness tracking application that helps users monitor their workouts and progress over time.',
+    longDescription:
+      'This comprehensive fitness tracker enables users to record workouts, track progress, and analyze performance trends. It provides personalized insights to help users achieve their fitness goals more effectively.',
     image: 'https://via.placeholder.com/600x400',
+    images: [
+      'https://via.placeholder.com/1200x800?text=Workout+Dashboard',
+      'https://via.placeholder.com/1200x800?text=Progress+Charts',
+      'https://via.placeholder.com/1200x800?text=Exercise+Library',
+      'https://via.placeholder.com/1200x800?text=Goal+Setting',
+    ],
     technologies: ['Vue.js', 'Pinia', 'Chart.js'],
+    features: [
+      'Customizable workout plans and routines',
+      'Exercise library with proper form instructions',
+      'Progress tracking with visual charts',
+      'Goal setting and achievement tracking',
+      'Body metrics and measurement logging',
+      'Performance analytics and trend identification',
+    ],
+    challenges:
+      'Creating an intuitive interface for logging complex workout data quickly was challenging. I designed a streamlined input system with smart defaults and templates that makes recording workouts fast and accurate, even during active exercise sessions.',
     demoUrl: '#',
     codeUrl: '#',
   },
@@ -162,8 +252,26 @@ const projects = [
     title: 'Portfolio Website',
     description:
       'A personal portfolio website showcasing projects and skills (this website).',
+    longDescription:
+      'This interactive portfolio website showcases my work, skills, and experience in web development. It features modern design elements, smooth animations, and responsive layouts to provide an engaging user experience.',
     image: 'https://via.placeholder.com/600x400',
+    images: [
+      'https://via.placeholder.com/1200x800?text=Portfolio+Home',
+      'https://via.placeholder.com/1200x800?text=Project+Showcase',
+      'https://via.placeholder.com/1200x800?text=Skills+Section',
+      'https://via.placeholder.com/1200x800?text=Contact+Form',
+    ],
     technologies: ['Vue.js', 'Tailwind CSS', 'Animation'],
+    features: [
+      'Interactive UI with mouse-following effects',
+      'Animated tech stack icons',
+      'Project showcase with detailed modal views',
+      'Responsive design for all device sizes',
+      'Dark/light mode toggle',
+      'Contact form with validation',
+    ],
+    challenges:
+      'Balancing visual appeal with performance was a key challenge. I implemented efficient animations using CSS transforms and opacity changes rather than more expensive properties, and used intersection observers to trigger animations only when elements are visible.',
     demoUrl: '#',
     codeUrl: '#',
   },
