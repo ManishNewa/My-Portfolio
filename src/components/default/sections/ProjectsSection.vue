@@ -57,6 +57,15 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { Eye as EyeIcon, Code as CodeIcon } from 'lucide-vue-next';
+
+defineProps({
+  projects: {
+    type: Array,
+    required: true,
+  },
+});
+</script>
 
 <style scoped></style>

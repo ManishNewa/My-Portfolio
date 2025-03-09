@@ -11,18 +11,27 @@
     <AboutSection />
 
     <ExperienceSection :experiences="workExperiences" />
+
+    <ProjectsSection :projects="projects" />
   </div>
 </template>
+
 <script setup>
 import NavigationBar from '@/components/default/layouts/NavigationBar.vue';
 import TechIcons from '@/components/common/icons/TechIcons.vue';
 import HeroSection from '@/components/default/sections/HeroSection.vue';
 import AboutSection from '@/components/default/sections/AboutSection.vue';
 import ExperienceSection from '@/components/default/sections/ExperienceSection.vue';
+import ProjectsSection from '@/components/default/sections/ProjectsSection.vue';
 
 import { markRaw, onMounted, shallowRef } from 'vue';
 
-import { simpleIcons, socialLinks, workExperiences } from '@/datasets/raw-data';
+import {
+  simpleIcons,
+  socialLinks,
+  workExperiences,
+  projects,
+} from '@/datasets/raw-data';
 
 import { colors, generateRandomValue } from '@/utils/helpers';
 
