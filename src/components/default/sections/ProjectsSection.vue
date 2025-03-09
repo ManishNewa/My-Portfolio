@@ -23,12 +23,12 @@
               <div
                 class="flex space-x-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
               >
-                <a
-                  :href="project.demoUrl"
+                <button
+                  @click="openProjectModal(project)"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
                   <eye-icon class="h-5 w-5" />
-                </a>
+                </button>
                 <a
                   :href="project.codeUrl"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
@@ -54,11 +54,19 @@
         </div>
       </div>
     </div>
+    <!-- Project Modal -->
+    <ProjectModal
+      v-if="modalOpen"
+      :currentProject="currentProject"
+      @close-modal="closeProjectModal"
+    />
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Eye as EyeIcon, Code as CodeIcon } from 'lucide-vue-next';
+import ProjectModal from '@/components/common/ProjectModal.vue';
 
 defineProps({
   projects: {
@@ -66,6 +74,19 @@ defineProps({
     required: true,
   },
 });
+
+const modalOpen = ref(false);
+const currentProject = ref(null);
+
+const openProjectModal = (project) => {
+  currentProject.value = project;
+  modalOpen.value = true;
+};
+
+const closeProjectModal = () => {
+  currentProject.value = null;
+  modalOpen.value = false;
+};
 </script>
 
 <style scoped></style>
