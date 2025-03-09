@@ -137,6 +137,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
+
+const emit = defineEmits(['close-modal']);
+
 const props = defineProps({
   currentProject: {
     type: Object,
@@ -149,7 +152,7 @@ const selectedProject = ref(null);
 const currentImageIndex = ref(0);
 
 const closeProjectModal = () => {
-  selectedProject.value = null;
+  emit('close-modal');
 };
 
 const nextImage = () => {
