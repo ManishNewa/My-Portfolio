@@ -51,7 +51,8 @@
                         {{ job.position }}
                       </h3>
                       <p class="text-purple-600 font-medium">
-                        {{ job.company }}
+                        {{ job.company }},
+                        <span class="text-red-600">{{ job.location }}</span>
                       </p>
                     </div>
                     <span

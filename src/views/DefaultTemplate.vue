@@ -145,7 +145,7 @@ const workExperiences = [
     description:
       'Learnt how to work on developing mobile applications using React native framework and successfully migrated Laravel web-based application into a React native mobile application',
     skills: ['React Native', 'HTML', 'CSS', 'JavaScript', 'Laravel'],
-    logo: '/images/logos/nccs_logo.png',
+    logo: '/images/logos/auxfin_logo.png',
   },
 ];
 onMounted(() => {
