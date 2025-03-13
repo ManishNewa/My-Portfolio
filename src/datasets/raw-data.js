@@ -114,12 +114,13 @@ const projects = [
       'A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.',
     longDescription:
       'This comprehensive e-commerce solution provides businesses with a complete online shopping experience. Built with Vue.js and Node.js, it features a responsive design that works seamlessly across all devices.',
-    image: 'https://via.placeholder.com/600x400',
+    image:
+      'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxFLWNvbW1lcmNlJTIwV2Vic2l0ZXxlbnwwfDB8fHwxNzQxODkyOTU4fDA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
     images: [
-      'https://via.placeholder.com/1200x800?text=E-commerce+Homepage',
-      'https://via.placeholder.com/1200x800?text=Product+Listing',
-      'https://via.placeholder.com/1200x800?text=Shopping+Cart',
-      'https://via.placeholder.com/1200x800?text=Checkout+Process',
+      'E-commerce Homepage',
+      'Product Listing',
+      'Shopping Cart',
+      'Checkout Process',
     ],
     technologies: ['Vue.js', 'Vuex', 'Node.js', 'MongoDB'],
     features: [
@@ -142,13 +143,9 @@ const projects = [
       'A drag-and-drop task management application with real-time updates and team collaboration features.',
     longDescription:
       'This task management application helps teams organize their work efficiently. It features a drag-and-drop interface for easy task prioritization and real-time updates to keep everyone in sync.',
-    image: 'https://via.placeholder.com/600x400',
-    images: [
-      'https://via.placeholder.com/1200x800?text=Task+Board',
-      'https://via.placeholder.com/1200x800?text=Task+Details',
-      'https://via.placeholder.com/1200x800?text=Team+Dashboard',
-      'https://via.placeholder.com/1200x800?text=Mobile+View',
-    ],
+    image:
+      'https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxUYXNrJTIwTWFuYWdlbWVudCUyMEFwcHxlbnwwfDB8fHwxNzQxODkyOTU4fDA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
+    images: ['Task Board', 'Task Details', 'Team Dashboard', 'Mobile View'],
     technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
     features: [
       'Intuitive drag-and-drop interface',
@@ -170,12 +167,13 @@ const projects = [
       'A weather application that displays current and forecasted weather data with beautiful visualizations.',
     longDescription:
       'This weather dashboard provides users with accurate weather information in a visually appealing format. It uses modern APIs to fetch real-time data and presents it through interactive charts and graphics.',
-    image: 'https://via.placeholder.com/600x400',
+    image:
+      'https://images.unsplash.com/photo-1558600053-2efe29d4c053?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxXZWF0aGVyJTIwRGFzaGJvYXJkfGVufDB8MHx8fDE3NDE4OTI5NTh8MA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
     images: [
-      'https://via.placeholder.com/1200x800?text=Weather+Dashboard',
-      'https://via.placeholder.com/1200x800?text=Forecast+View',
-      'https://via.placeholder.com/1200x800?text=Weather+Map',
-      'https://via.placeholder.com/1200x800?text=Location+Search',
+      'Weather Dashboard',
+      'Forecast View',
+      'Weather Map',
+      'Location Search',
     ],
     technologies: ['Vue.js', 'Chart.js', 'Weather API'],
     features: [
@@ -198,12 +196,13 @@ const projects = [
       'An application that allows users to search for recipes based on ingredients they have at home.',
     longDescription:
       'This recipe finder helps users discover new meals based on ingredients they already have. It features a smart search algorithm that suggests recipes with maximum ingredient matches and minimum missing items.',
-    image: 'https://via.placeholder.com/600x400',
+    image:
+      'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxSZWNpcGUlMjBGaW5kZXJ8ZW58MHwwfHx8MTc0MTg5Mjk1OHww&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
     images: [
-      'https://via.placeholder.com/1200x800?text=Recipe+Search',
-      'https://via.placeholder.com/1200x800?text=Recipe+Details',
-      'https://via.placeholder.com/1200x800?text=Ingredient+Selection',
-      'https://via.placeholder.com/1200x800?text=Saved+Recipes',
+      'Recipe Search',
+      'Recipe Details',
+      'Ingredient Selection',
+      'Saved Recipes',
     ],
     technologies: ['Vue.js', 'Vuetify', 'Recipe API'],
     features: [
@@ -226,12 +225,13 @@ const projects = [
       'A fitness tracking application that helps users monitor their workouts and progress over time.',
     longDescription:
       'This comprehensive fitness tracker enables users to record workouts, track progress, and analyze performance trends. It provides personalized insights to help users achieve their fitness goals more effectively.',
-    image: 'https://via.placeholder.com/600x400',
+    image:
+      'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxSZWNpcGUlMjBGaW5kZXJ8ZW58MHwwfHx8MTc0MTg5Mjk1OHww&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
     images: [
-      'https://via.placeholder.com/1200x800?text=Workout+Dashboard',
-      'https://via.placeholder.com/1200x800?text=Progress+Charts',
-      'https://via.placeholder.com/1200x800?text=Exercise+Library',
-      'https://via.placeholder.com/1200x800?text=Goal+Setting',
+      'Workout Dashboard',
+      'Progress Charts',
+      'Exercise Library',
+      'Goal Setting',
     ],
     technologies: ['Vue.js', 'Pinia', 'Chart.js'],
     features: [
@@ -254,12 +254,13 @@ const projects = [
       'A personal portfolio website showcasing projects and skills (this website).',
     longDescription:
       'This interactive portfolio website showcases my work, skills, and experience in web development. It features modern design elements, smooth animations, and responsive layouts to provide an engaging user experience.',
-    image: 'https://via.placeholder.com/600x400',
+    image:
+      'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxQb3J0Zm9saW8lMjBXZWJzaXRlfGVufDB8MHx8fDE3NDE4OTI5NTh8MA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
     images: [
-      'https://via.placeholder.com/1200x800?text=Portfolio+Home',
-      'https://via.placeholder.com/1200x800?text=Project+Showcase',
-      'https://via.placeholder.com/1200x800?text=Skills+Section',
-      'https://via.placeholder.com/1200x800?text=Contact+Form',
+      'Portfolio Home',
+      'Project Showcase',
+      'Skills Section',
+      'Contact Form',
     ],
     technologies: ['Vue.js', 'Tailwind CSS', 'Animation'],
     features: [
