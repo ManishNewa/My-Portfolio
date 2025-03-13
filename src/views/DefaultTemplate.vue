@@ -13,6 +13,8 @@
     <ExperienceSection :experiences="workExperiences" />
 
     <ProjectsSection :projects="projects" />
+
+    <ContactSection :contactInfo="contactInfo" />
   </div>
 </template>
 
@@ -23,6 +25,7 @@ import HeroSection from '@/components/default/sections/HeroSection.vue';
 import AboutSection from '@/components/default/sections/AboutSection.vue';
 import ExperienceSection from '@/components/default/sections/ExperienceSection.vue';
 import ProjectsSection from '@/components/default/sections/ProjectsSection.vue';
+import ContactSection from '@/components/default/sections/ContactSection.vue';
 
 import { markRaw, onMounted, shallowRef } from 'vue';
 
@@ -31,6 +34,7 @@ import {
   socialLinks,
   workExperiences,
   projects,
+  contactInfo,
 } from '@/datasets/raw-data';
 
 import { colors, generateRandomValue } from '@/utils/helpers';

@@ -4,4 +4,8 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>

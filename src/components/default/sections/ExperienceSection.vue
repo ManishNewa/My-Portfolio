@@ -104,4 +104,35 @@ defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 768px) {
+  section#experience .md\:pr-16:nth-child(odd) {
+    animation: fadeInLeft 0.6s ease-out forwards;
+  }
+
+  section#experience .md\:pl-16:nth-child(even) {
+    animation: fadeInRight 0.6s ease-out forwards;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>

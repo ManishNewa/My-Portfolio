@@ -1,4 +1,7 @@
 import simpleIcons from '@/plugins/simple-icons';
+
+// Phone as PhoneIcon,
+import { Mail as EmailIcon, MapPin as MapPinIcon } from 'lucide-vue-next';
 // Social Links
 const socialLinks = [
   {
@@ -278,4 +281,19 @@ const projects = [
   },
 ];
 
-export { simpleIcons, socialLinks, workExperiences, projects };
+// Contact Information
+const contactInfo = [
+  // { icon: PhoneIcon, label: 'Phone', value: '+44 7818721334' },
+  {
+    icon: EmailIcon,
+    label: 'Email',
+    value: 'maharjanlikitauk@gmail.com',
+  },
+  {
+    icon: MapPinIcon,
+    label: 'Address',
+    value: 'Chester, UK',
+  },
+];
+
+export { simpleIcons, socialLinks, workExperiences, projects, contactInfo };
