@@ -6,7 +6,7 @@
       </h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="(project, index) in projects"
+          v-for="(project, index) in allProjects"
           :key="project.id"
           class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group hover-lift"
           :style="{ animationDelay: `${index * 0.1}s` }"
@@ -64,17 +64,19 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { Eye as EyeIcon, Code as CodeIcon } from 'lucide-vue-next';
 import ProjectModal from '@/components/common/ProjectModal.vue';
 
-defineProps({
+import { ref, onMounted } from 'vue';
+import { Eye as EyeIcon, Code as CodeIcon } from 'lucide-vue-next';
+
+const props = defineProps({
   projects: {
     type: Array,
     required: true,
   },
 });
 
+const allProjects = ref(null);
 const modalOpen = ref(false);
 const currentProject = ref(null);
 
@@ -87,6 +89,11 @@ const closeProjectModal = () => {
   currentProject.value = null;
   modalOpen.value = false;
 };
+
+onMounted(async () => {
+  allProjects.value = props.projects;
+  // await loadImages();
+});
 </script>
 
 <style scoped></style>
