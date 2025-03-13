@@ -126,7 +126,7 @@
             target="_blank"
             class="interactive-button bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2"
           >
-            <github-icon class="h-5 w-5" />
+            <component :is="simpleIcons.GitIcon" class="h-5 w-5" />
             <span>View Code</span>
           </a>
         </div>
@@ -137,6 +137,15 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watchEffect } from 'vue';
+import {
+  X as XIcon,
+  ChevronLeft as ChevronLeftIcon,
+  ChevronRight as ChevronRightIcon,
+  ExternalLink as ExternalLinkIcon,
+  Image as ImageIcon,
+} from 'lucide-vue-next';
+
+import simpleIcons from '@/plugins/simple-icons';
 
 const emit = defineEmits(['close-modal']);
 
