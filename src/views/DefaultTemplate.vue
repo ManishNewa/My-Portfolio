@@ -14,7 +14,9 @@
 
     <ProjectsSection :projects="projects" />
 
-    <ContactSection :contactInfo="contactInfo" />
+    <ContactSection :contact-info="contactInfo" />
+
+    <FooterSection :social-links="socialLinks" :fullname="'Likita Maharjan'" />
   </div>
 </template>
 
@@ -26,6 +28,7 @@ import AboutSection from '@/components/default/sections/AboutSection.vue';
 import ExperienceSection from '@/components/default/sections/ExperienceSection.vue';
 import ProjectsSection from '@/components/default/sections/ProjectsSection.vue';
 import ContactSection from '@/components/default/sections/ContactSection.vue';
+import FooterSection from '@/components/default/layouts/FooterSection.vue';
 
 import { markRaw, onMounted, shallowRef } from 'vue';
 
