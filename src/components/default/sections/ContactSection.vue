@@ -110,6 +110,14 @@
 
 <script setup>
 import { ref } from 'vue';
+import { Send as SendIcon } from 'lucide-vue-next';
+
+defineProps({
+  contactInfo: {
+    type: Array,
+    required: true,
+  },
+});
 
 const form = ref({
   name: '',

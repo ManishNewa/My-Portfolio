@@ -14,7 +14,7 @@
 
     <ProjectsSection :projects="projects" />
 
-    <ContactSection />
+    <ContactSection :contactInfo="contactInfo" />
   </div>
 </template>
 
@@ -34,6 +34,7 @@ import {
   socialLinks,
   workExperiences,
   projects,
+  contactInfo,
 } from '@/datasets/raw-data';
 
 import { colors, generateRandomValue } from '@/utils/helpers';
