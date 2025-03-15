@@ -44,7 +44,14 @@
                   }
                 "
               >
-                <div class="perspective-card">
+                <div>
+                  <div class="mb-2">
+                    <span
+                      class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full"
+                    >
+                      {{ job.period }}</span
+                    >
+                  </div>
                   <div class="flex justify-between items-start mb-4">
                     <div>
                       <h3 class="text-xl font-bold text-gray-900">
@@ -55,10 +62,6 @@
                         <span class="text-red-600">{{ job.location }}</span>
                       </p>
                     </div>
-                    <span
-                      class="px-3 py-1 mx-3 bg-purple-100 text-purple-800 rounded-full text-sm"
-                      >{{ job.period }}</span
-                    >
                   </div>
                   <p class="text-gray-600 mb-4">{{ job.description }}</p>
                   <div class="flex flex-wrap gap-2">

@@ -7,25 +7,25 @@ const socialLinks = [
   {
     name: 'GitHub',
     icon: simpleIcons.GitIcon,
-    url: 'https://github.com',
+    url: 'https://github.com/likita1234',
     color: '#181717',
   },
   {
     name: 'LinkedIn',
     icon: simpleIcons.LinkedInIcon,
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/in/likita-maharjan/',
     color: '#0077B5',
   },
-  {
-    name: 'Twitter',
-    icon: simpleIcons.XIcon,
-    url: 'https://twitter.com',
-    color: '#000000',
-  },
+  // {
+  //   name: 'Twitter',
+  //   icon: simpleIcons.XIcon,
+  //   url: 'https://twitter.com',
+  //   color: '#000000',
+  // },
   {
     name: 'Instagram',
     icon: simpleIcons.InstagramIcon,
-    url: 'https://instagram.com',
+    url: 'https://www.instagram.com/leketa.m/',
     color: '#E4405F',
   },
 ];
