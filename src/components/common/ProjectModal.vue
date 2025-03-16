@@ -205,14 +205,13 @@ onMounted(() => {
   watchEffect(() => {
     if (selectedProject.value) {
       document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
     }
   });
 });
 
 onUnmounted(() => {
   document.removeEventListener('keydown', handleKeyDown);
+  document.body.style.overflow = '';
 });
 </script>
 
