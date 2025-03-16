@@ -42,7 +42,7 @@
               <img
                 :src="image"
                 :alt="`${selectedProject.title} - Image ${idx + 1}`"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
               />
             </div>
           </transition-group>
