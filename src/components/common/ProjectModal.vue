@@ -105,11 +105,12 @@
               {{ feature }}
             </li>
           </ul>
-
-          <h4 class="text-lg font-semibold mt-6 mb-3">
-            Challenges & Solutions
-          </h4>
-          <p class="text-gray-600 mb-4">{{ selectedProject.challenges }}</p>
+          <div v-if="selectedProject.challenges">
+            <h4 class="text-lg font-semibold mt-6 mb-3">
+              Challenges & Solutions
+            </h4>
+            <p class="text-gray-600 mb-4">{{ selectedProject.challenges }}</p>
+          </div>
         </div>
 
         <div class="flex justify-between mt-8">
