@@ -179,15 +179,24 @@ const projects = [
     ],
     demoUrl: [
       {
-        title: 'Front Link',
+        title: 'Front',
         url: 'https://mental-health-front-git-master-likita1234s-projects.vercel.app/home',
       },
       {
-        title: 'API Link',
+        title: 'API',
         url: 'https://mental-health-back-0gmp.onrender.com/',
       },
     ],
-    codeUrl: [],
+    codeUrl: [
+      {
+        title: 'Frontend Code Link',
+        url: 'https://github.com/likita1234/mental-health-front',
+      },
+      {
+        title: 'Backtend Code Link',
+        url: 'https://github.com/likita1234/mental-health-back',
+      },
+    ],
   },
   {
     id: 3,
