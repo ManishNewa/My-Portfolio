@@ -16,7 +16,7 @@
             <div
               v-for="contact in contactInfo"
               :key="contact.label"
-              class="flex items-start space-x-4 hover-lift"
+              class="flex items-start space-x-4"
             >
               <div class="bg-white p-3 rounded-full shadow-md pulse-on-hover">
                 <component :is="contact.icon" class="h-6 w-6 text-purple-600" />
