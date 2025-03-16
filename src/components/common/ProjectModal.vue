@@ -109,7 +109,14 @@
             <h4 class="text-lg font-semibold mt-6 mb-3">
               Challenges & Solutions
             </h4>
-            <p class="text-gray-600 mb-4">{{ selectedProject.challenges }}</p>
+            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+              <li
+                v-for="challenge in selectedProject.challenges"
+                :key="challenge"
+              >
+                {{ challenge }}
+              </li>
+            </ul>
           </div>
         </div>
 
