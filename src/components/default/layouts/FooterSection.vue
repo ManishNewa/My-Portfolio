@@ -22,10 +22,10 @@
       <div
         class="border-t border-purple-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
       >
-        <p class="text-purple-200 text-sm mb-4 md:mb-0">
+        <p class="text-purple-200 text-sm mx-auto">
           &copy; {{ getCurrentYear }}. All rights reserved.
         </p>
-        <div class="flex space-x-6">
+        <!-- <div class="flex space-x-6">
           <a
             href="#"
             class="text-purple-200 hover:text-white text-sm transition-colors duration-300"
@@ -36,7 +36,7 @@
             class="text-purple-200 hover:text-white text-sm transition-colors duration-300"
             >Terms of Service</a
           >
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>
