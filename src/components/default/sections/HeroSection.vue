@@ -6,7 +6,16 @@
     <div class="max-w-6xl mx-auto text-center relative z-20">
       <div class="mb-6 inline-block relative perspective-card-container">
         <div class="perspective-card" ref="perspectiveCard">
-          <div
+          <!-- absolute left-4 top-1/3 z-10 -->
+          <div class="w-32 h-32 md:w-60 md:h-60">
+            <LottieAnimation
+              :animation-data="girlBlinkingAnimation"
+              :speed="1"
+              size="100%"
+              class="hover:scale-110 transition-transform"
+            />
+          </div>
+          <!-- <div
             class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto"
           >
             <img
@@ -14,7 +23,7 @@
               alt="Profile"
               class="w-full h-full object-cover"
             />
-          </div>
+          </div>-->
         </div>
         <div
           class="absolute -bottom-2 -right-2 bg-green-500 w-5 h-5 rounded-full border-2 border-white"
@@ -72,6 +81,7 @@ import { onMounted, ref } from 'vue';
 import { Download as DownloadIcon, Mail as MailIcon } from 'lucide-vue-next';
 
 import { useMousePosition } from '@/composables/useMousePosition';
+import { girlBlinkingAnimation } from '@/utils/animation-json-helpers.js';
 
 const { registerElement } = useMousePosition();
 
