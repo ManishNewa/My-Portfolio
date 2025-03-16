@@ -287,8 +287,8 @@ const projects = [
     ],
     challenges:
       'Implementing real-time synchronization across multiple devices while maintaining performance was challenging. I used Firebase Realtime Database with careful data structuring to ensure efficient updates and minimize bandwidth usage.',
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: [],
+    codeUrl: [],
   },
   {
     id: 6,
@@ -311,8 +311,8 @@ const projects = [
     ],
     challenges:
       'Creating accurate and visually appealing data visualizations was a significant challenge. I used Chart.js with custom configurations to display complex weather data in an intuitive way that helps users understand patterns at a glance.',
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: [],
+    codeUrl: [],
   },
   {
     id: 7,
@@ -385,8 +385,8 @@ const projects = [
     ],
     challenges:
       'One of the main challenges was implementing a real-time inventory system that could handle concurrent purchases. I solved this by implementing a reservation system during checkout and using WebSockets to notify users of low stock items.',
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: [],
+    codeUrl: [],
   },
 ];
 
