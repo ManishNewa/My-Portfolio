@@ -147,8 +147,8 @@ const submitForm = async () => {
     const response = await emailApi.post('/sendEmail', formBody);
     if (response.status === 200) {
       setTimeout(async () => {
-        resetForm();
         await sendConfirmationEmail();
+        resetForm();
       }, 5000);
     }
   } catch (error) {
