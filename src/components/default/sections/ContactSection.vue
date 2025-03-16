@@ -113,7 +113,10 @@ import { ref } from 'vue';
 import { Send as SendIcon } from 'lucide-vue-next';
 import emailApi from '@/utils/email-axios';
 
-import { contactEmailContent } from '@/utils/email-templates';
+import {
+  contactEmailContent,
+  contactConfirmationEmail,
+} from '@/utils/email-templates';
 
 defineProps({
   contactInfo: {
@@ -143,13 +146,26 @@ const submitForm = async () => {
     formSubmitted.value = true;
     const response = await emailApi.post('/sendEmail', formBody);
     if (response.status === 200) {
-      setTimeout(() => {
+      setTimeout(async () => {
         resetForm();
+        await sendConfirmationEmail();
       }, 5000);
     }
   } catch (error) {
     console.log('Error while sending email::', error);
   }
+};
+
+const sendConfirmationEmail = async () => {
+  const { name, email } = form.value;
+  const emailBody = contactConfirmationEmail(name);
+  const formBody = {
+    email,
+    subject: "Thanks for Reaching Out - We'll Respond Shortly!",
+    appName: import.meta.env.VITE_APP_NAME,
+    emailBody,
+  };
+  return await emailApi.post('/sendEmail', formBody);
 };
 
 const resetForm = () => {

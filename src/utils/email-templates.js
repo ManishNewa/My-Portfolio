@@ -11,3 +11,19 @@ export const contactEmailContent = (name, email, message) =>
     <p style="font-size: 14px; color: #777;">
         You can reply directly to this email to respond.
     </p>`;
+
+export const contactConfirmationEmail = (name) =>
+  `<h2 style="font-size: 20px; margin-bottom: 15px; color: #6245b1;">
+            Thank You for Reaching Out, ${name}!
+        </h2>
+        <p style="font-size: 16px; color: #333; margin-bottom: 10px;">
+            We have received your message and will get back to you as soon as possible.
+        </p>
+        <p style="font-size: 16px; color: #333;">
+            If your inquiry is urgent, feel free to reply to this email.
+        </p>
+        <p style="font-size: 14px; color: #777; margin-top: 20px;">
+            Best regards, <br>
+            <strong>Your Name</strong> <br>
+            Your Website or Company Name
+        </p>`;
