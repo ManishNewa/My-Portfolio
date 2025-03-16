@@ -4,7 +4,7 @@
 </template>
 
 <script setup>
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/vue';
 </script>
 
 <style>
