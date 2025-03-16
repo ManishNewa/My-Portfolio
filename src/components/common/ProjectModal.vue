@@ -17,7 +17,7 @@
       <!-- Close button -->
       <button
         @click="closeProjectModal"
-        class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full text-gray-800 hover:text-purple-600 transition-colors z-20"
+        class="cursor-pointer absolute top-4 right-4 bg-white/80 backdrop-blur-sm p-2 rounded-full text-gray-800 hover:text-purple-600 transition-colors z-20"
       >
         <x-icon class="h-6 w-6" />
       </button>

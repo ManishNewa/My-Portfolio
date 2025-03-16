@@ -93,7 +93,7 @@
             </div>
             <button
               type="submit"
-              class="interactive-button w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-md transition-colors duration-300 flex items-center justify-center space-x-2"
+              class="interactive-button cursor-pointer w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-md transition-colors duration-300 flex items-center justify-center space-x-2"
             >
               <send-icon class="h-5 w-5" />
               <span>Send Message</span>

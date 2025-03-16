@@ -27,13 +27,13 @@
                   @click="openProjectModal(project)"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
-                  <eye-icon class="h-5 w-5" />
+                  <eye-icon class="h-5 w-5 cursor-pointer" />
                 </button>
                 <a
                   :href="project.codeUrl"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
-                  <code-icon class="h-5 w-5" />
+                  <code-icon class="h-5 w-5 cursor-pointer" />
                 </a>
               </div>
             </div>
