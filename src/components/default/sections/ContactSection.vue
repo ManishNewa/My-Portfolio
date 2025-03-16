@@ -111,6 +111,9 @@
 <script setup>
 import { ref } from 'vue';
 import { Send as SendIcon } from 'lucide-vue-next';
+import emailApi from '@/utils/email-axios';
+
+import { contactEmailContent } from '@/utils/email-templates';
 
 defineProps({
   contactInfo: {
@@ -127,14 +130,26 @@ const form = ref({
 });
 const formSubmitted = ref(false);
 
-const submitForm = () => {
-  console.log('Form submitted:', form.value);
-  formSubmitted.value = true;
-
-  // Reset form after submission
-  setTimeout(() => {
-    resetForm();
-  }, 5000);
+const submitForm = async () => {
+  try {
+    const { name, email, subject, message } = form.value;
+    const emailBody = contactEmailContent(name, email, message);
+    const formBody = {
+      email: import.meta.env.VITE_RECEIVING_EMAIL,
+      subject,
+      appName: import.meta.env.VITE_APP_NAME,
+      emailBody,
+    };
+    formSubmitted.value = true;
+    const response = await emailApi.post('/sendEmail', formBody);
+    if (response.status === 200) {
+      setTimeout(() => {
+        resetForm();
+      }, 5000);
+    }
+  } catch (error) {
+    console.log('Error while sending email::', error);
+  }
 };
 
 const resetForm = () => {
