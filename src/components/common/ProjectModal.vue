@@ -24,15 +24,19 @@
 
       <!-- Carousel -->
       <div class="relative h-64 sm:h-80 md:h-96 bg-gray-100">
-        <div
-          class="absolute inset-0 flex items-center justify-center"
-          v-if="selectedProject.images.length === 0"
-        >
-          <image-icon class="h-16 w-16 text-gray-300" />
-        </div>
-
-        <div v-else class="h-full relative">
+        <div class="h-full relative">
           <transition-group name="carousel" tag="div" class="h-full">
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+              v-if="selectedProject.images.length === 0"
+            >
+              <img
+                :src="selectedProject.image"
+                :alt="selectedProject.title"
+                class="w-full h-full object-contain"
+              />
+              <!-- <image-icon class="h-16 w-16 text-gray-300" /> -->
+            </div>
             <div
               v-for="(image, idx) in selectedProject.images"
               :key="idx"
@@ -150,7 +154,7 @@ import {
   ChevronLeft as ChevronLeftIcon,
   ChevronRight as ChevronRightIcon,
   ExternalLink as ExternalLinkIcon,
-  Image as ImageIcon,
+  // Image as ImageIcon,
 } from 'lucide-vue-next';
 
 import simpleIcons from '@/plugins/simple-icons';
