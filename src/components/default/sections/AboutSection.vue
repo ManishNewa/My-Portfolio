@@ -31,14 +31,22 @@
         </div>
         <div class="order-1 md:order-2 relative">
           <div
-            class="relative z-10 rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300 perspective-card-container"
+            class="relative z-10 overflow-hidden transform hover:scale-105 transition-transform duration-300 perspective-card-container"
           >
-            <div class="perspective-card" ref="aboutImage">
-              <img
+            <div class="perspective-card flex justify-center" ref="aboutImage">
+              <div class="w-60 h-60 md:w-90 md:h-90">
+                <LottieAnimation
+                  :animation-data="ladyWavingAnimation"
+                  :speed="1"
+                  size="100%"
+                  class="hover:scale-110 transition-transform"
+                />
+              </div>
+              <!-- <img
                 :src="'/images/personal/liki3.jpg'"
                 alt="About me"
                 class="w-full h-auto"
-              />
+              /> -->
             </div>
           </div>
           <div
@@ -63,6 +71,7 @@ import {
 } from 'lucide-vue-next';
 
 import { useMousePosition } from '@/composables/useMousePosition';
+import { ladyWavingAnimation } from '@/utils/animation-json-helpers.js';
 
 const { registerElement } = useMousePosition();
 
@@ -80,7 +89,7 @@ const personalDetails = [
 ];
 
 onMounted(() => {
-  registerElement(aboutImage.value, 20);
+  registerElement(aboutImage, 20);
 });
 </script>
 

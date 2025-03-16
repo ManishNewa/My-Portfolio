@@ -6,7 +6,7 @@
       </h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="(project, index) in allProjects"
+          v-for="(project, index) in projects"
           :key="project.id"
           class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group hover-lift"
           :style="{ animationDelay: `${index * 0.1}s` }"
@@ -15,7 +15,7 @@
             <img
               :src="project.image"
               :alt="project.title"
-              class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+              class="w-full h-48 object-contain transition-transform duration-500 group-hover:scale-110"
             />
             <div
               class="absolute inset-0 bg-gradient-to-t from-purple-900/70 to-blue-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
@@ -24,16 +24,20 @@
                 class="flex space-x-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
               >
                 <button
+                  v-tooltip="'Project Details'"
                   @click="openProjectModal(project)"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
-                  <eye-icon class="h-5 w-5" />
+                  <eye-icon class="h-5 w-5 cursor-pointer" />
                 </button>
                 <a
-                  :href="project.codeUrl"
+                  v-for="code in project.codeUrl"
+                  :key="code.url"
+                  v-tooltip="code.title"
+                  :href="code.url"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
-                  <code-icon class="h-5 w-5" />
+                  <code-icon class="h-5 w-5 cursor-pointer" />
                 </a>
               </div>
             </div>
@@ -66,17 +70,16 @@
 <script setup>
 import ProjectModal from '@/components/common/ProjectModal.vue';
 
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import { Eye as EyeIcon, Code as CodeIcon } from 'lucide-vue-next';
 
-const props = defineProps({
+defineProps({
   projects: {
     type: Array,
     required: true,
   },
 });
 
-const allProjects = ref(null);
 const modalOpen = ref(false);
 const currentProject = ref(null);
 
@@ -89,11 +92,6 @@ const closeProjectModal = () => {
   currentProject.value = null;
   modalOpen.value = false;
 };
-
-onMounted(async () => {
-  allProjects.value = props.projects;
-  // await loadImages();
-});
 </script>
 
 <style scoped></style>

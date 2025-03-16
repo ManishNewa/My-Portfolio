@@ -16,7 +16,7 @@
             <div
               v-for="contact in contactInfo"
               :key="contact.label"
-              class="flex items-start space-x-4 hover-lift"
+              class="flex items-start space-x-4"
             >
               <div class="bg-white p-3 rounded-full shadow-md pulse-on-hover">
                 <component :is="contact.icon" class="h-6 w-6 text-purple-600" />
@@ -93,7 +93,7 @@
             </div>
             <button
               type="submit"
-              class="interactive-button w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-md transition-colors duration-300 flex items-center justify-center space-x-2"
+              class="interactive-button cursor-pointer w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-md transition-colors duration-300 flex items-center justify-center space-x-2"
             >
               <send-icon class="h-5 w-5" />
               <span>Send Message</span>
