@@ -126,15 +126,21 @@
 
         <div class="flex justify-between mt-8">
           <a
-            :href="selectedProject.demoUrl"
+            v-for="demo in selectedProject.demoUrl"
+            v-tooltip="demo.title"
+            :key="demo.url"
+            :href="demo.url"
             target="_blank"
             class="interactive-button bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2"
           >
             <external-link-icon class="h-5 w-5" />
-            <span>Live Demo</span>
+            <span> {{ demo.title }} </span>
           </a>
           <a
-            :href="selectedProject.codeUrl"
+            v-for="code in selectedProject.codeUrl"
+            v-tooltip="code.title"
+            :key="code.url"
+            :href="code.url"
             target="_blank"
             class="interactive-button bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2"
           >

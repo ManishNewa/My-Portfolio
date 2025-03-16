@@ -24,13 +24,17 @@
                 class="flex space-x-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
               >
                 <button
+                  v-tooltip="'Project Details'"
                   @click="openProjectModal(project)"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
                   <eye-icon class="h-5 w-5 cursor-pointer" />
                 </button>
                 <a
-                  :href="project.codeUrl"
+                  v-for="code in project.codeUrl"
+                  :key="code.url"
+                  v-tooltip="code.title"
+                  :href="code.url"
                   class="bg-white text-purple-600 p-2 rounded-full hover:bg-purple-100 transition-colors"
                 >
                   <code-icon class="h-5 w-5 cursor-pointer" />

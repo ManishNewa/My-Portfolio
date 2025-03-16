@@ -193,7 +193,7 @@ const projects = [
         url: 'https://github.com/likita1234/mental-health-front',
       },
       {
-        title: 'Backtend Code Link',
+        title: 'Backend Code Link',
         url: 'https://github.com/likita1234/mental-health-back',
       },
     ],
