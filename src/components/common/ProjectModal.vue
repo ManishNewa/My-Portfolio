@@ -145,7 +145,7 @@
             class="interactive-button bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2"
           >
             <component :is="simpleIcons.GitIcon" class="h-5 w-5" />
-            <span>View Code</span>
+            <span>{{ code.title }}</span>
           </a>
         </div>
       </div>
