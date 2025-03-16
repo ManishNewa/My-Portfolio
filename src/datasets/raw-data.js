@@ -294,8 +294,9 @@ const projects = [
       'Due date tracking with notifications',
       'Time tracking and reporting',
     ],
-    challenges:
+    challenges: [
       'Implementing real-time synchronization across multiple devices while maintaining performance was challenging. I used Firebase Realtime Database with careful data structuring to ensure efficient updates and minimize bandwidth usage.',
+    ],
     demoUrl: [],
     codeUrl: [],
   },
@@ -318,8 +319,9 @@ const projects = [
       'Saved locations for quick access',
       'Weather alerts and notifications',
     ],
-    challenges:
+    challenges: [
       'Creating accurate and visually appealing data visualizations was a significant challenge. I used Chart.js with custom configurations to display complex weather data in an intuitive way that helps users understand patterns at a glance.',
+    ],
     demoUrl: [],
     codeUrl: [],
   },
@@ -392,8 +394,9 @@ const projects = [
       'Order history and tracking',
       'Admin dashboard for inventory management',
     ],
-    challenges:
+    challenges: [
       'One of the main challenges was implementing a real-time inventory system that could handle concurrent purchases. I solved this by implementing a reservation system during checkout and using WebSockets to notify users of low stock items.',
+    ],
     demoUrl: [],
     codeUrl: [],
   },
