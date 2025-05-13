@@ -44,13 +44,13 @@
       <div
         class="flex justify-center space-x-4 mb-12 animate-fadeIn animation-delay-600"
       >
-        <a
+        <!-- <a
           href="#"
           class="interactive-button bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2"
         >
           <download-icon class="h-5 w-5" />
           <span>Download CV</span>
-        </a>
+        </a> -->
         <a
           href="#contact"
           class="interactive-button bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-full shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center space-x-2"
