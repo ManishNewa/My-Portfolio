@@ -21,7 +21,10 @@
       </div>
 
       <!-- Mobile Menu Toggle Button -->
-      <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden">
+      <button
+        @click="mobileMenuOpen = !mobileMenuOpen"
+        class="md:hidden cursor-pointer"
+      >
         <menu-icon v-if="!mobileMenuOpen" class="h-6 w-6" />
         <x-icon v-else class="h-6 w-6" />
       </button>
@@ -30,7 +33,7 @@
     <!-- Mobile View -->
     <div
       v-if="mobileMenuOpen"
-      class="md:hidden absolute top-16 left-0 right-0 bg-white/90 backdrop-blur-md shadow-md py-4 px-4"
+      class="md:hidden absolute top-16 left-0 right-0 bg-gray-800/90 backdrop-blur-md shadow-lg py-4 px-4"
     >
       <div class="flex flex-col space-y-4">
         <a
@@ -38,7 +41,7 @@
           :key="item.id"
           :href="item.href"
           @click="mobileMenuOpen = false"
-          class="text-gray-700 hover:text-purple-600 transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-white/50"
+          class="text-gray-100 hover:text-purple-400 transition-colors duration-300 py-2 px-4 rounded-lg hover:bg-gray-700/50"
         >
           {{ item.label }}
         </a>
