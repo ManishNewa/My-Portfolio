@@ -78,7 +78,8 @@
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import { Download as DownloadIcon, Mail as MailIcon } from 'lucide-vue-next';
+// Download as DownloadIcon,
+import { Mail as MailIcon } from 'lucide-vue-next';
 
 import { useMousePosition } from '@/composables/useMousePosition';
 import { girlBlinkingAnimation } from '@/utils/animation-json-helpers.js';
