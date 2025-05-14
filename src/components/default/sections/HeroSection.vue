@@ -39,7 +39,7 @@
       <h2
         class="text-xl md:text-2xl text-gray-600 mb-8 animate-fadeIn animation-delay-300"
       >
-        <span class="typing-text">React Native Developer</span>
+        <span ref="typingText" class="typing-text whitespace-nowrap"></span>
       </h2>
       <div
         class="flex justify-center space-x-4 mb-12 animate-fadeIn animation-delay-600"
@@ -95,9 +95,54 @@ defineProps({
   },
 });
 
+const professionalTitles = ref([
+  'React Native Developer',
+  'Frontend Developer',
+  'Web Application Developer',
+]);
+const typingText = ref(null);
+
 onMounted(() => {
   registerElement(perspectiveCard, 20);
+  setTimeout(type, 500);
 });
+
+let currentIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingDelay = 100;
+let erasingDelay = 50;
+let newTextDelay = 1500;
+
+function type() {
+  const currentTitle = professionalTitles.value[currentIndex];
+  const element = typingText.value;
+
+  if (!element) return;
+
+  if (!isDeleting) {
+    element.textContent = currentTitle.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentTitle.length) {
+      isDeleting = true;
+      setTimeout(type, newTextDelay);
+    } else {
+      setTimeout(type, typingDelay);
+    }
+  } else {
+    element.textContent = currentTitle.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      currentIndex = (currentIndex + 1) % professionalTitles.value.length;
+      setTimeout(type, typingDelay);
+    } else {
+      setTimeout(type, erasingDelay);
+    }
+  }
+}
 </script>
 
 <style scoped>
