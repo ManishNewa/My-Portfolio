@@ -6,10 +6,21 @@
         <div class="order-2 md:order-1">
           <h3 class="text-2xl font-bold mb-4">Who am I?</h3>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            As a recent Master's graduate from Wrexham University in MSc
-            Computer Science, having almost 4 years of commercial experience as
-            a Software Developer, I'm currently looking for Software Developer
-            roles in fintech companies.
+            I am a results-driven software developer with over 4 years of
+            hands-on experience in building and maintaining mobile and web
+            applications, specializing in React JS and React Native. With a
+            strong foundation in PHP, JavaScript, Java, and AWS services, I’ve
+            contributed across all stages of the software development life
+            cycle—ranging from requirement analysis and system design to
+            implementation and testing—using both Agile and Waterfall
+            methodologies.
+          </p>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            I hold an MSc in Computer Science with Advanced Practice
+            (Distinction) from Wrexham University, where I also explored the
+            intersection of tech and mental health in my dissertation project.
+            Let’s connect if you’re looking for someone who thrives on solving
+            complex problems and building tech that makes a difference
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
             When I'm not coding, you can find me hiking in the mountains,
@@ -79,7 +90,7 @@ const aboutImage = ref(null);
 
 const personalDetails = [
   { icon: MapPinIcon, label: 'Location', value: 'Chester, UK' },
-  { icon: BriefcaseIcon, label: 'Experience', value: '4 Years' },
+  { icon: BriefcaseIcon, label: 'Experience', value: 'Over 4 Years' },
   { icon: GlobeIcon, label: 'Languages', value: 'English, Nepali' },
   {
     icon: CalendarIcon,
