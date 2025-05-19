@@ -275,131 +275,131 @@ const projects = [
     codeUrl: [],
   },
 
-  {
-    id: 5,
-    title: 'Task Management App',
-    description:
-      'A drag-and-drop task management application with real-time updates and team collaboration features.',
-    longDescription:
-      'This task management application helps teams organize their work efficiently. It features a drag-and-drop interface for easy task prioritization and real-time updates to keep everyone in sync.',
-    image:
-      'https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxUYXNrJTIwTWFuYWdlbWVudCUyMEFwcHxlbnwwfDB8fHwxNzQxODkyOTU4fDA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
-    images: [],
-    technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-    features: [
-      'Intuitive drag-and-drop interface',
-      'Real-time updates across all connected devices',
-      'Team collaboration with comments and assignments',
-      'Customizable boards and task categories',
-      'Due date tracking with notifications',
-      'Time tracking and reporting',
-    ],
-    challenges: [
-      'Implementing real-time synchronization across multiple devices while maintaining performance was challenging. I used Firebase Realtime Database with careful data structuring to ensure efficient updates and minimize bandwidth usage.',
-    ],
-    demoUrl: [],
-    codeUrl: [],
-  },
-  {
-    id: 6,
-    title: 'Weather Dashboard',
-    description:
-      'A weather application that displays current and forecasted weather data with beautiful visualizations.',
-    longDescription:
-      'This weather dashboard provides users with accurate weather information in a visually appealing format. It uses modern APIs to fetch real-time data and presents it through interactive charts and graphics.',
-    image:
-      'https://images.unsplash.com/photo-1558600053-2efe29d4c053?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxXZWF0aGVyJTIwRGFzaGJvYXJkfGVufDB8MHx8fDE3NDE4OTI5NTh8MA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
-    images: [],
-    technologies: ['Vue.js', 'Chart.js', 'Weather API'],
-    features: [
-      'Current weather conditions with detailed metrics',
-      '7-day forecast with hourly breakdowns',
-      'Interactive weather maps with radar overlays',
-      'Location search with autocomplete',
-      'Saved locations for quick access',
-      'Weather alerts and notifications',
-    ],
-    challenges: [
-      'Creating accurate and visually appealing data visualizations was a significant challenge. I used Chart.js with custom configurations to display complex weather data in an intuitive way that helps users understand patterns at a glance.',
-    ],
-    demoUrl: [],
-    codeUrl: [],
-  },
-  {
-    id: 7,
-    title: 'Recipe Finder',
-    description:
-      'An application that allows users to search for recipes based on ingredients they have at home.',
-    longDescription:
-      'This recipe finder helps users discover new meals based on ingredients they already have. It features a smart search algorithm that suggests recipes with maximum ingredient matches and minimum missing items.',
-    image:
-      'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxSZWNpcGUlMjBGaW5kZXJ8ZW58MHwwfHx8MTc0MTg5Mjk1OHww&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
-    images: [],
-    technologies: ['Vue.js', 'Vuetify', 'Recipe API'],
-    features: [
-      'Ingredient-based recipe search',
-      'Dietary preference and allergy filters',
-      'Step-by-step cooking instructions',
-      'Nutritional information and serving sizes',
-      'Recipe saving and meal planning',
-      'Shopping list generation for missing ingredients',
-    ],
-    challenges: [
-      'Developing an algorithm that could effectively match available ingredients to recipes while accounting for substitutions was complex. I implemented a scoring system that ranks recipes based on ingredient matches, popularity, and preparation time.',
-    ],
-    demoUrl: [],
-    codeUrl: [],
-  },
-  {
-    id: 8,
-    title: 'Fitness Tracker',
-    description:
-      'A fitness tracking application that helps users monitor their workouts and progress over time.',
-    longDescription:
-      'This comprehensive fitness tracker enables users to record workouts, track progress, and analyze performance trends. It provides personalized insights to help users achieve their fitness goals more effectively.',
-    image:
-      'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxSZWNpcGUlMjBGaW5kZXJ8ZW58MHwwfHx8MTc0MTg5Mjk1OHww&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
-    images: [],
-    technologies: ['Vue.js', 'Pinia', 'Chart.js'],
-    features: [
-      'Customizable workout plans and routines',
-      'Exercise library with proper form instructions',
-      'Progress tracking with visual charts',
-      'Goal setting and achievement tracking',
-      'Body metrics and measurement logging',
-      'Performance analytics and trend identification',
-    ],
-    challenges: [
-      'Creating an intuitive interface for logging complex workout data quickly was challenging. I designed a streamlined input system with smart defaults and templates that makes recording workouts fast and accurate, even during active exercise sessions.',
-    ],
-    demoUrl: [],
-    codeUrl: [],
-  },
-  {
-    id: 9,
-    title: 'E-commerce Website',
-    description:
-      'A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.',
-    longDescription:
-      'This comprehensive e-commerce solution provides businesses with a complete online shopping experience. Built with Vue.js and Node.js, it features a responsive design that works seamlessly across all devices.',
-    image:
-      'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxFLWNvbW1lcmNlJTIwV2Vic2l0ZXxlbnwwfDB8fHwxNzQxODkyOTU4fDA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
-    images: [],
-    technologies: ['Vue.js', 'Vuex', 'Node.js', 'MongoDB'],
-    features: [
-      'Responsive product catalog with filtering and sorting',
-      'User authentication and profile management',
-      'Shopping cart with persistent storage',
-      'Secure checkout process with Stripe integration',
-      'Order history and tracking',
-      'Admin dashboard for inventory management',
-    ],
-    challenges: [
-      'One of the main challenges was implementing a real-time inventory system that could handle concurrent purchases. I solved this by implementing a reservation system during checkout and using WebSockets to notify users of low stock items.',
-    ],
-    demoUrl: [],
-    codeUrl: [],
-  },
+  // {
+  //   id: 5,
+  //   title: 'Task Management App',
+  //   description:
+  //     'A drag-and-drop task management application with real-time updates and team collaboration features.',
+  //   longDescription:
+  //     'This task management application helps teams organize their work efficiently. It features a drag-and-drop interface for easy task prioritization and real-time updates to keep everyone in sync.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxUYXNrJTIwTWFuYWdlbWVudCUyMEFwcHxlbnwwfDB8fHwxNzQxODkyOTU4fDA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
+  //   images: [],
+  //   technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
+  //   features: [
+  //     'Intuitive drag-and-drop interface',
+  //     'Real-time updates across all connected devices',
+  //     'Team collaboration with comments and assignments',
+  //     'Customizable boards and task categories',
+  //     'Due date tracking with notifications',
+  //     'Time tracking and reporting',
+  //   ],
+  //   challenges: [
+  //     'Implementing real-time synchronization across multiple devices while maintaining performance was challenging. I used Firebase Realtime Database with careful data structuring to ensure efficient updates and minimize bandwidth usage.',
+  //   ],
+  //   demoUrl: [],
+  //   codeUrl: [],
+  // },
+  // {
+  //   id: 6,
+  //   title: 'Weather Dashboard',
+  //   description:
+  //     'A weather application that displays current and forecasted weather data with beautiful visualizations.',
+  //   longDescription:
+  //     'This weather dashboard provides users with accurate weather information in a visually appealing format. It uses modern APIs to fetch real-time data and presents it through interactive charts and graphics.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1558600053-2efe29d4c053?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxXZWF0aGVyJTIwRGFzaGJvYXJkfGVufDB8MHx8fDE3NDE4OTI5NTh8MA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
+  //   images: [],
+  //   technologies: ['Vue.js', 'Chart.js', 'Weather API'],
+  //   features: [
+  //     'Current weather conditions with detailed metrics',
+  //     '7-day forecast with hourly breakdowns',
+  //     'Interactive weather maps with radar overlays',
+  //     'Location search with autocomplete',
+  //     'Saved locations for quick access',
+  //     'Weather alerts and notifications',
+  //   ],
+  //   challenges: [
+  //     'Creating accurate and visually appealing data visualizations was a significant challenge. I used Chart.js with custom configurations to display complex weather data in an intuitive way that helps users understand patterns at a glance.',
+  //   ],
+  //   demoUrl: [],
+  //   codeUrl: [],
+  // },
+  // {
+  //   id: 7,
+  //   title: 'Recipe Finder',
+  //   description:
+  //     'An application that allows users to search for recipes based on ingredients they have at home.',
+  //   longDescription:
+  //     'This recipe finder helps users discover new meals based on ingredients they already have. It features a smart search algorithm that suggests recipes with maximum ingredient matches and minimum missing items.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxSZWNpcGUlMjBGaW5kZXJ8ZW58MHwwfHx8MTc0MTg5Mjk1OHww&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
+  //   images: [],
+  //   technologies: ['Vue.js', 'Vuetify', 'Recipe API'],
+  //   features: [
+  //     'Ingredient-based recipe search',
+  //     'Dietary preference and allergy filters',
+  //     'Step-by-step cooking instructions',
+  //     'Nutritional information and serving sizes',
+  //     'Recipe saving and meal planning',
+  //     'Shopping list generation for missing ingredients',
+  //   ],
+  //   challenges: [
+  //     'Developing an algorithm that could effectively match available ingredients to recipes while accounting for substitutions was complex. I implemented a scoring system that ranks recipes based on ingredient matches, popularity, and preparation time.',
+  //   ],
+  //   demoUrl: [],
+  //   codeUrl: [],
+  // },
+  // {
+  //   id: 8,
+  //   title: 'Fitness Tracker',
+  //   description:
+  //     'A fitness tracking application that helps users monitor their workouts and progress over time.',
+  //   longDescription:
+  //     'This comprehensive fitness tracker enables users to record workouts, track progress, and analyze performance trends. It provides personalized insights to help users achieve their fitness goals more effectively.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxSZWNpcGUlMjBGaW5kZXJ8ZW58MHwwfHx8MTc0MTg5Mjk1OHww&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
+  //   images: [],
+  //   technologies: ['Vue.js', 'Pinia', 'Chart.js'],
+  //   features: [
+  //     'Customizable workout plans and routines',
+  //     'Exercise library with proper form instructions',
+  //     'Progress tracking with visual charts',
+  //     'Goal setting and achievement tracking',
+  //     'Body metrics and measurement logging',
+  //     'Performance analytics and trend identification',
+  //   ],
+  //   challenges: [
+  //     'Creating an intuitive interface for logging complex workout data quickly was challenging. I designed a streamlined input system with smart defaults and templates that makes recording workouts fast and accurate, even during active exercise sessions.',
+  //   ],
+  //   demoUrl: [],
+  //   codeUrl: [],
+  // },
+  // {
+  //   id: 9,
+  //   title: 'E-commerce Website',
+  //   description:
+  //     'A fully responsive e-commerce platform with product filtering, cart functionality, and payment integration.',
+  //   longDescription:
+  //     'This comprehensive e-commerce solution provides businesses with a complete online shopping experience. Built with Vue.js and Node.js, it features a responsive design that works seamlessly across all devices.',
+  //   image:
+  //     'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixid=M3w3MjA0ODR8MHwxfHNlYXJjaHwxfHxFLWNvbW1lcmNlJTIwV2Vic2l0ZXxlbnwwfDB8fHwxNzQxODkyOTU4fDA&ixlib=rb-4.0.3&w=1200&h=800&fit=crop',
+  //   images: [],
+  //   technologies: ['Vue.js', 'Vuex', 'Node.js', 'MongoDB'],
+  //   features: [
+  //     'Responsive product catalog with filtering and sorting',
+  //     'User authentication and profile management',
+  //     'Shopping cart with persistent storage',
+  //     'Secure checkout process with Stripe integration',
+  //     'Order history and tracking',
+  //     'Admin dashboard for inventory management',
+  //   ],
+  //   challenges: [
+  //     'One of the main challenges was implementing a real-time inventory system that could handle concurrent purchases. I solved this by implementing a reservation system during checkout and using WebSockets to notify users of low stock items.',
+  //   ],
+  //   demoUrl: [],
+  //   codeUrl: [],
+  // },
 ];
 
 // Contact Information
